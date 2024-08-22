@@ -1,0 +1,18 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.ehcache.org/ehcache.xsd classpath:ehcache.xsd"
+         xmlns="http://www.ehcache.org/ehcache.xsd">
+
+    <cache name="in.balaji.entity.SocialNetworkPost"
+           maxEntriesLocalHeap="10000"
+           timeToLiveSeconds="3600">
+        <persistence strategy="none"/>
+    </cache>
+
+    <defaultCache
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            maxEntriesLocalHeap="1000"
+            overflowToDisk="false"
+            statistics="true"/>
+</ehcache>
